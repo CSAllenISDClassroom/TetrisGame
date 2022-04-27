@@ -7,13 +7,12 @@ import Scenes
 
 
 class BackgroundLayer : Layer {
-      let background = Background()
-
+    let clearscreen = ClearScreen()
       init() {
+
           // Using a meaningful name can be helpful for debugging
           super.init(name:"Background")
-
-          // We insert our RenderableEntities in the constructor
-          insert(entity:background, at:.back)
+          insert(entity:clearscreen,at:.back)
+          
       }
   }
